@@ -1,0 +1,251 @@
+{
+ "_note": "SYNTHETIC FIXTURE for offline tests \u2014 not real scanner output",
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "CVE-2021-44228",
+    "severity": "Critical",
+    "cvss": [
+     {
+      "metrics": {
+       "baseScore": 10.0
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.15.0"
+     ],
+     "state": "fixed"
+    }
+   },
+   "relatedVulnerabilities": [],
+   "artifact": {
+    "name": "log4j-core",
+    "version": "2.14.1",
+    "type": "java-archive",
+    "purl": "pkg:maven/org.apache.logging.log4j/log4j-core@2.14.1"
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2021-45046",
+    "severity": "Critical",
+    "cvss": [
+     {
+      "metrics": {
+       "baseScore": 9.0
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.16.0"
+     ],
+     "state": "fixed"
+    }
+   },
+   "relatedVulnerabilities": [],
+   "artifact": {
+    "name": "log4j-core",
+    "version": "2.14.1",
+    "type": "java-archive",
+    "purl": "pkg:maven/org.apache.logging.log4j/log4j-core@2.14.1"
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2021-45105",
+    "severity": "Medium",
+    "cvss": [
+     {
+      "metrics": {
+       "baseScore": 5.9
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.17.0"
+     ],
+     "state": "fixed"
+    }
+   },
+   "relatedVulnerabilities": [],
+   "artifact": {
+    "name": "log4j-core",
+    "version": "2.14.1",
+    "type": "java-archive",
+    "purl": "pkg:maven/org.apache.logging.log4j/log4j-core@2.14.1"
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2021-44832",
+    "severity": "Medium",
+    "cvss": [
+     {
+      "metrics": {
+       "baseScore": 6.6
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.17.1"
+     ],
+     "state": "fixed"
+    }
+   },
+   "relatedVulnerabilities": [],
+   "artifact": {
+    "name": "log4j-core",
+    "version": "2.14.1",
+    "type": "java-archive",
+    "purl": "pkg:maven/org.apache.logging.log4j/log4j-core@2.14.1"
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-42889",
+    "severity": "Critical",
+    "cvss": [
+     {
+      "metrics": {
+       "baseScore": 9.8
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.10.0"
+     ],
+     "state": "fixed"
+    }
+   },
+   "relatedVulnerabilities": [],
+   "artifact": {
+    "name": "commons-text",
+    "version": "1.9",
+    "type": "java-archive",
+    "purl": "pkg:maven/org.apache.commons/commons-text@1.9"
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-1471",
+    "severity": "High",
+    "cvss": [
+     {
+      "metrics": {
+       "baseScore": 8.3
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.0"
+     ],
+     "state": "fixed"
+    }
+   },
+   "relatedVulnerabilities": [],
+   "artifact": {
+    "name": "snakeyaml",
+    "version": "1.30",
+    "type": "java-archive",
+    "purl": "pkg:maven/org.yaml/snakeyaml@1.30"
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2020-36518",
+    "severity": "High",
+    "cvss": [
+     {
+      "metrics": {
+       "baseScore": 7.5
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.12.6.1",
+      "2.13.2.1"
+     ],
+     "state": "fixed"
+    }
+   },
+   "relatedVulnerabilities": [],
+   "artifact": {
+    "name": "jackson-databind",
+    "version": "2.9.10.1",
+    "type": "java-archive",
+    "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.1"
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2020-8840",
+    "severity": "Critical",
+    "cvss": [
+     {
+      "metrics": {
+       "baseScore": 9.8
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.9.10.3"
+     ],
+     "state": "fixed"
+    }
+   },
+   "relatedVulnerabilities": [],
+   "artifact": {
+    "name": "jackson-databind",
+    "version": "2.9.10.1",
+    "type": "java-archive",
+    "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.1"
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-jfh8-c2jp-5v3q",
+    "severity": "Critical",
+    "cvss": [
+     {
+      "metrics": {
+       "baseScore": 10.0
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.15.0"
+     ],
+     "state": "fixed"
+    }
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-44228",
+     "cvss": [
+      {
+       "metrics": {
+        "baseScore": 10.0
+       }
+      }
+     ]
+    }
+   ],
+   "artifact": {
+    "name": "log4j-core",
+    "version": "2.14.1",
+    "type": "java-archive",
+    "purl": "pkg:maven/org.apache.logging.log4j/log4j-core@2.14.1"
+   }
+  }
+ ]
+}

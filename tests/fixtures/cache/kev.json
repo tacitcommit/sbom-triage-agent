@@ -1,0 +1,10 @@
+{
+ "_note": "SYNTHETIC subset for offline tests",
+ "vulnerabilities": [
+  {
+   "cveID": "CVE-2021-44228",
+   "dateAdded": "synthetic",
+   "vulnerabilityName": "Log4j RCE (fixture)"
+  }
+ ]
+}

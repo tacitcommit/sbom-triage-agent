@@ -1,0 +1,24 @@
+# 위험 점수 = 규칙. 같은 입력이면 같은 순위가 나와야 한다. LLM 은 여기 관여하지 않는다.
+# 최종 점수 = (cvss + epss + kev + exposure + reachability) × criticality 배수, 0~100
+weights:
+  cvss_max: 40          # CVSS 10점 → 40점. CVSS 가 없으면 cvss_unknown 사용
+  cvss_unknown: 20
+  epss_max: 25          # EPSS 확률 1.0 → 25점
+  kev: 15               # CISA KEV 등재
+  exposure:
+    internet: 10
+    internal: 3
+    none: 0
+  reachability:
+    reachable: 10
+    unknown: 0          # 모르면 더하지도 빼지도 않는다
+    not_reachable: 0    # 감점하지 않는다 — 휴리스틱이 틀릴 수 있으므로 "가산 없음"으로만
+criticality_multiplier:
+  high: 1.0
+  medium: 0.85
+  low: 0.7
+# SSVC 이름을 빌린 조치 등급
+tiers:
+  act: 70        # 이번 주 조치
+  attend: 45     # 다음 정기 패치
+  # 그 아래는 track (추적만)

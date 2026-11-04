@@ -1,0 +1,10 @@
+# 자산 맥락. 실제 환경에서는 CMDB·배포 설정에서 읽어 온다.
+# exposure: internet | internal | none
+# criticality: high | medium | low   (다루는 데이터·서비스 등급)
+services:
+  order-api:
+    source_dir: sample-app
+    exposure: internet
+    criticality: high
+    owner: commerce-backend
+    note: 결제 직전 주문 API. 외부 공개, 개인정보 처리.

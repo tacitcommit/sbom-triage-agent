@@ -1,0 +1,42 @@
+{
+ "CVE-2021-44228": {
+  "epss": 0.94,
+  "percentile": 0.5,
+  "date": "synthetic"
+ },
+ "CVE-2021-45046": {
+  "epss": 0.9,
+  "percentile": 0.5,
+  "date": "synthetic"
+ },
+ "CVE-2021-45105": {
+  "epss": 0.05,
+  "percentile": 0.5,
+  "date": "synthetic"
+ },
+ "CVE-2021-44832": {
+  "epss": 0.03,
+  "percentile": 0.5,
+  "date": "synthetic"
+ },
+ "CVE-2022-42889": {
+  "epss": 0.85,
+  "percentile": 0.5,
+  "date": "synthetic"
+ },
+ "CVE-2022-1471": {
+  "epss": 0.4,
+  "percentile": 0.5,
+  "date": "synthetic"
+ },
+ "CVE-2020-36518": {
+  "epss": 0.01,
+  "percentile": 0.5,
+  "date": "synthetic"
+ },
+ "CVE-2020-8840": {
+  "epss": 0.1,
+  "percentile": 0.5,
+  "date": "synthetic"
+ }
+}

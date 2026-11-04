@@ -1,0 +1,21 @@
+# 도달 가능성 규칙 (import·호출 패턴 수준의 휴리스틱).
+# 호출 그래프 분석이 아니다. 규칙이 없는 패키지는 "unknown"으로 남기고 점수를 더하지 않는다.
+#
+# package: Maven artifactId
+# any_of:  소스에 이 문자열 중 하나라도 있으면 "reachable"
+# requires_any: (선택) 패키지를 쓰더라도 이 중 하나가 있어야 취약 조건 성립 — 없으면 "not_reachable"
+# 어느 any_of 도 없으면 "not_reachable" (선언만 되고 코드에서 안 씀)
+rules:
+  - package: log4j-core
+    any_of: ["org.apache.logging.log4j.Logger", "LogManager.getLogger"]
+    note: 로그에 외부 입력이 들어가면 JNDI lookup 경로가 열린다 (Log4Shell 계열)
+  - package: snakeyaml
+    any_of: ["new Yaml(", ".load("]
+    note: 신뢰할 수 없는 입력을 기본 생성자로 load 하면 임의 객체 생성
+  - package: jackson-databind
+    any_of: ["ObjectMapper"]
+    requires_any: ["enableDefaultTyping", "activateDefaultTyping", "@JsonTypeInfo"]
+    note: 역직렬화 가젯 CVE 다수는 polymorphic typing 이 켜져 있어야 성립
+  - package: commons-text
+    any_of: ["StringSubstitutor", "StringLookupFactory"]
+    note: Text4Shell 은 StringSubstitutor 의 기본 interpolator 사용 시 성립

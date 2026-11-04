@@ -13,6 +13,10 @@ SBOM 기반 공급망 위험 트리아지 에이전트 — LOTTE AX Challenge 20
 
 모든 단계가 하나의 근거 저장소(`out/evidence.jsonl`)에 기록하고, 보고서의 각 줄은 근거 ID 를 단다.
 
+![./demo.sh 실행 화면](docs/demo.gif)
+
+[원본 영상 (MP4, 1분 24초)](docs/demo.mp4) — 실데이터 실행 한 번을 편집 없이 녹화했다. 만드는 법은 [DEMO.md](DEMO.md).
+
 ## 지키는 규칙
 
 | 규칙 | 어디서 | 막는 것 |

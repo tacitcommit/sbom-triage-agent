@@ -3,7 +3,7 @@
 # 핵심 한 줄(자막)을 먼저 띄운 뒤 실제 출력을 보여 주고 읽을 시간만큼 멈춘다. 전체 약 1분 40초.
 #   ./demo.sh           # 실데이터 (syft·grype 필요)
 #   FAST=1 ./demo.sh    # 멈춤 없이 (점검용)
-#   vhs demo.tape       # 이 스크립트를 out/demo.mp4 로 녹화
+#   vhs demo.tape       # 이 스크립트를 docs/demo.mp4 로 녹화
 set -euo pipefail
 cd "$(dirname "$0")"
 source .venv/bin/activate          # 스크립트 안에서는 셸 alias 가 없어 venv 의 python 을 쓴다

@@ -7,7 +7,8 @@
 
 ```bash
 brew install vhs && brew install --cask font-d2coding   # 한 번만 (한글 고정폭 글꼴)
-vhs demo.tape             # → out/demo.mp4 (1920×1080)
+vhs demo.tape             # → docs/demo.mp4 (1920×1080)
+ffmpeg -y -i docs/demo.mp4 -vf "fps=8,scale=1280:-1:flags=lanczos,split[a][b];[a]palettegen=max_colors=64:stats_mode=diff[p];[b][p]paletteuse=dither=none:diff_mode=rectangle" docs/demo.gif   # README 미리보기 (약 1MB)
 ```
 
 직접 화면 녹화(⌘⇧5)로 찍어도 된다. 터미널 창을 넓게 열고 `./demo.sh` 를 실행하면 된다.

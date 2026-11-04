@@ -1,7 +1,7 @@
-# ./demo.sh 실행을 그대로 녹화한다 (편집 없음).  vhs demo.tape → out/demo.mp4
+# ./demo.sh 실행을 그대로 녹화한다 (편집 없음).  vhs demo.tape → docs/demo.mp4
 # 필요: brew install vhs font-d2coding(cask), 실데이터 실행 조건(syft·grype·ANTHROPIC_API_KEY)
 
-Output out/demo.mp4
+Output docs/demo.mp4
 
 Set Shell "bash"
 Set FontFamily "D2Coding"
